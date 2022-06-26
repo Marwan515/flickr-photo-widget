@@ -1,0 +1,4 @@
+<%= form_with(url: "/", method: :get) do |i| %>
+  <%= i.text_field :user_id, class:"form-control ", placeholder:"USER ID" %>
+  <%= i.submit "Get Photos", class:"form-control btn btn-primary" %>
+<% end %>

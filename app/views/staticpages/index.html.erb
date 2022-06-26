@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <%= render 'search_form' %>
+  <% if @photos.any? %>
+    <% @photos.each do |p| %>
+    <%= link_to(image_tag(Flickr.url_q(p)), Flickr.url_photopage(p)) %>    
+    <% end %>
+  <% end %>
+</div>
